@@ -13,7 +13,13 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-unimpaired'
 
-" Fancy start screen.
+" Version control integration.
+" https://github.com/tpope/vim-fugitive
+Bundle 'tpope/vim-fugitive'
+Bundle 'gregsexton/gitv'
+
+" Appearance, status, and navigation.
+Bundle 'Lokaltog/vim-powerline'
 Bundle 'mhinz/vim-startify'
 Bundle 'SirVer/ultisnips'
 Bundle 'scrooloose/nerdcommenter'
@@ -25,6 +31,10 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'scrooloose/syntastic'
 Bundle 'SirVer/ultisnips'
+
+" Power editing.
+Bundle 'Shougo/neocomplcache'
+Bundle 'Raimondi/delimitMate'
 
 " http://vimcasts.org/episodes/undo-branching-and-gundo-vim/
 Bundle 'sjl/gundo.vim'
@@ -45,6 +55,7 @@ let g:airline_right_sep = '◀'
 
 " Indentation plugin
 Bundle 'nathanaelkane/vim-indent-guides'
+
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=234
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=235
